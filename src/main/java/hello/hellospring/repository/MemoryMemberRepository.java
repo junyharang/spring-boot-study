@@ -31,4 +31,9 @@ public class MemoryMemberRepository implements MemeberRepository{
     public List<Member> findAll() {
         return new ArrayList<>(store.values());
     } // findAll() 끝
+
+    // Test가 하나 끝날 때마다 Repository를 Clear 시켜주기 위한 코드 (MemoryMemberRepositoryTest의 afterEach()에서 호출)
+    public void clearStore() {
+        store.clear();
+    }
 } // Class 끝
