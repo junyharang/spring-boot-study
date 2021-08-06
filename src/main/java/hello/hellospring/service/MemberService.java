@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 // 컴포넌트 스캔 방식의 Service
-// @Service
+//@Service
 public class MemberService {   // Service 쪽은 비즈니스 용어에 맞게 이름 등을 적어야 한다.
         // 아래 내용에서 repository 객체를 생성하고, Service Test에서 또 new를 통해 Repository를 생성해서 테스트하면 서로 다른 객체를 이용하게 된다.
 //  private final MemoryMemberRepository memberRepository = new MemoryMemberRepository();
@@ -18,7 +18,7 @@ public class MemberService {   // Service 쪽은 비즈니스 용어에 맞게 �
     private final MemoryMemberRepository memberRepository;
 
     // @Service가 있는 Service가 객체가 생성될 때, @Autowired가 붙은 생성자는 스프링이 컨테이너에서 빈으로 관리할 때, 생성자를 호출하는데, 이 때 MemberService를 넣어준다.
-    @Autowired
+//    @Autowired
     public MemberService(MemoryMemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     } // 생성자 끝
