@@ -16,7 +16,7 @@ class MemberServiceTest {
 
     @BeforeEach
     // Dependency Injection (DI 기법)
-    public void beforEach() {   // test를 실행하기 전에 MemoryMemberRepository 객체를 만들어 준 뒤 그 객체를 MemberService 객체를 생성 해 주면서 넣어준다.
+    public void beforEach() {   // test를 실행하기 전에 MemoryMemberRepository 객체를 만들어 준 뒤 그 객체를 MemoryMemberRepository 객체를 생성 해 주면서 넣어준다.
         memberRepository = new MemoryMemberRepository();
         // 이렇게 해줌으로 MemberService와 MemberServiceTest가 같은 객체의 MemoryMemberRepository를 사용하게 된다.
         memberService = new MemberService(memberRepository);
@@ -81,4 +81,4 @@ class MemberServiceTest {
     @Test
     void findOne() {
     } // findOne() 끝
-}
+} // Class 끝

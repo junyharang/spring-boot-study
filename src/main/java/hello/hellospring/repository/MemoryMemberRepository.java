@@ -5,6 +5,7 @@ import hello.hellospring.domain.Member;
 
 import java.util.*;
 
+//@Repository
 public class MemoryMemberRepository implements MemeberRepository{
 
     private static Map<Long, Member> store = new HashMap<>();
