@@ -1,2 +1,21 @@
 # spring-boot-study
 인프런  - 스프링 입문 : 크드로 배우는 스프링 부트, 웹 MC, DB 접근 기술 공부 중
+<br><br>
+
+## 정리 자료
+### JunyHarang's Blog
+
+---
+
+[01.[Spring Boot] thymeleaf와 Spring Boot](https://junyharang.tistory.com/70)
+<br>
+[02.[Spring Boot] Spring Web 개발 기초](https://junyharang.tistory.com/71)
+<br>
+[03.[Spring Boot] 회원 관리 예제 - Backend](https://junyharang.tistory.com/72)
+<br>
+[04.[Spring Boot] Service 개발 및 Test Case 작성](https://junyharang.tistory.com/77)
+<br>
+[05.[Spring Boot] Spring Bean과 의존관계](https://junyharang.tistory.com/78)
+<br>
+[06.[Spring Boot] Java Code로 직접 Spring Bean 등록](https://junyharang.tistory.com/79)
+<br>
