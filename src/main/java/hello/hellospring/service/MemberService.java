@@ -7,8 +7,15 @@ import java.util.List;
 import java.util.Optional;
 
 public class MemberService {   // Service 쪽은 비즈니스 용어에 맞게 이름 등을 적어야 한다.
+        // 아래 내용에서 repository 객체를 생성하고, Service Test에서 또 new를 통해 Repository를 생성해서 테스트하면 서로 다른 객체를 이용하게 된다.
+//  private final MemoryMemberRepository memberRepository = new MemoryMemberRepository();
 
-    private final MemoryMemberRepository memberRepository = new MemoryMemberRepository();
+    // 이 문제를 해결하기 위해서 아래와 같이 생성자를 통해 외부에서 접근할 수 있도록 해 준다.
+    private final MemoryMemberRepository memberRepository;
+
+    public MemberService(MemoryMemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    } // 생성자 끝
 
     // 회원 가입
     public Long join(Member member) {
