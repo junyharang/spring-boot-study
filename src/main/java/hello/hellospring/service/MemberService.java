@@ -1,7 +1,7 @@
 package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
-import hello.hellospring.repository.MemoryMemberRepository;
+import hello.hellospring.repository.MemberRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,11 +13,11 @@ public class MemberService {   // Service 쪽은 비즈니스 용어에 맞게 �
 //  private final MemoryMemberRepository memberRepository = new MemoryMemberRepository();
 
     // 이 문제를 해결하기 위해서 아래와 같이 생성자를 통해 외부에서 접근할 수 있도록 해 준다.
-    private final MemoryMemberRepository memberRepository;
+    private final MemberRepository memberRepository;
 
     // @Service가 있는 Service가 객체가 생성될 때, @Autowired가 붙은 생성자는 스프링이 컨테이너에서 빈으로 관리할 때, 생성자를 호출하는데, 이 때 MemberService를 넣어준다.
 //    @Autowired
-    public MemberService(MemoryMemberRepository memberRepository) {
+    public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     } // 생성자 끝
 
