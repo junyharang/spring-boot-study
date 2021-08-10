@@ -24,6 +24,7 @@ public class MemberController {
     @Autowired
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
+        System.out.println("MemberService = " + memberService.getClass());
     } // 생성자 () 끝
 
     @GetMapping("/members/new")

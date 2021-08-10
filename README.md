@@ -1,5 +1,5 @@
 # spring-boot-study
-인프런  - 스프링 입문 : 크드로 배우는 스프링 부트, 웹 MC, DB 접근 기술 공부 중
+**인프런  - 스프링 입문 : 크드로 배우는 스프링 부트, 웹 MC, DB 접근 기술 공부 중**
 <br><br>
 
 ## 정리 자료
@@ -26,3 +26,8 @@
 [09.[Spring Boot] 통합 Test](https://junyharang.tistory.com/85)
 <br>
 [10.[Spring Boot] JPA](https://junyharang.tistory.com/86)
+<br>
+[11.[Spring Boot] Spring Data JPA](https://junyharang.tistory.com/87)
+<br>
+[12.[Spring Boot] AOP](https://junyharang.tistory.com/88)
+<br>
