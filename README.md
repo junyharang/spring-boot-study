@@ -19,3 +19,10 @@
 <br>
 [06.[Spring Boot] Java Code로 직접 Spring Bean 등록](https://junyharang.tistory.com/79)
 <br>
+[07.[Spring Boot] 등록, 목록 보기 구현하기](https://junyharang.tistory.com/81)
+<br>
+[08.[Spring Boot] 기존 코드 손 안대고, 설정으로 구현 Class 변경](https://junyharang.tistory.com/82)
+<br>
+[09.[Spring Boot] 통합 Test](https://junyharang.tistory.com/85)
+<br>
+[10.[Spring Boot] JPA](https://junyharang.tistory.com/86)
