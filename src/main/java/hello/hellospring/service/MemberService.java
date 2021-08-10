@@ -2,12 +2,14 @@ package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
 // 컴포넌트 스캔 방식의 Service
 //@Service
+@Transactional
 public class MemberService {   // Service 쪽은 비즈니스 용어에 맞게 이름 등을 적어야 한다.
         // 아래 내용에서 repository 객체를 생성하고, Service Test에서 또 new를 통해 Repository를 생성해서 테스트하면 서로 다른 객체를 이용하게 된다.
 //  private final MemoryMemberRepository memberRepository = new MemoryMemberRepository();

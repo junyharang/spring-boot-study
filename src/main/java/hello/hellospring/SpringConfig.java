@@ -2,22 +2,26 @@ package hello.hellospring;
 
 import hello.hellospring.repository.JdbcMemberRepository;
 import hello.hellospring.repository.JdbcTemplateMemberRepository;
+import hello.hellospring.repository.JpaMemberRepository;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.persistence.EntityManager;
 import javax.sql.DataSource;
 
 @Configuration
 public class SpringConfig {
 
     private DataSource source;
+    private EntityManager em;
 
     @Autowired
-    public SpringConfig(DataSource source) {
+    public SpringConfig(DataSource source, EntityManager em) {
         this.source = source;
+        this.em = em;
     } // 생성자 끝
 
     // @Bean : Bean을 내가 직접 만들겠다는 의미; 스프링은 이것을 보고, Bean을 등록하라는 명령으로 인식
@@ -32,6 +36,7 @@ public class SpringConfig {
     public MemberRepository memberRepository() {
 //        return new MemoryMemberRepository();
 //        return new JdbcMemberRepository(source);
-        return new JdbcTemplateMemberRepository(source);
+//        return new JdbcTemplateMemberRepository(source);
+        return new JpaMemberRepository(em);
     } // memberRepository() 끝
 } // Class 끝

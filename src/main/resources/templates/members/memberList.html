@@ -1,31 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-
-<head>
-    <meta charset="UTF-8">
-    <title>주니하랑의 Spring Boot Study</title>
-</head>
-
 <body>
-    <div class="container">
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>이름</th>
-                    </tr>
-                </thead>
+<div class="container">
+    <div>
+        <table>
+            <thead>
 
-                <tbody>
-                <!-- th:each는 타임리프 문법으로 Loop를 돌리는 것 -->
-                    <tr th:each="member : ${members}">
-                        <td th:text="${member.id}"></td>
-                        <td th:text="${member.name}"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div> <!--- /container --->
+            <tr>
+                <th>#</th>
+                <th>이름</th> </tr>
+            </thead>
+            <tbody>
+            <tr th:each="member : ${members}">
+                <td th:text="${member.id}"></td>
+                <td th:text="${member.name}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div> <!-- /container -->
 </body>
 </html>
